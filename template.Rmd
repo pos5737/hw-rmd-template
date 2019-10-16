@@ -1,0 +1,47 @@
+---
+title: "Homework 8"
+author: "Carlisle Rainey"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+# the code below controls the default settings for each chunk
+knitr::opts_chunk$set(echo = TRUE, 
+                      message = FALSE, 
+                      warning = FALSE, 
+                      fig.align = "center", 
+                      fig.height=3, 
+                      fig.width=5)
+
+# load packages here, so they don't show up in and clutter the document
+library(tidyverse)
+library(haven)
+library(kableExtra)
+```
+
+
+# Exercise 1.1
+
+For this exercise, I did... Notice how I can override the `fig.height` and the `fig.width` I set as the default in the initial code chunk above.
+
+```{r, fig.height=2.5, fig.width=4}
+parties <- read_rds("data/parties.rds")
+
+ggplot(parties, aes(x = eneg, y = enep)) + 
+  geom_point()
+```
+
+Here's a bit more discussion about Exercise 1.1.
+
+## Exercise 2.3
+
+Here's another exercise...
+
+```{r}
+parties <- read_rds("data/parties.rds")
+
+glimpse(parties)
+```
+
+
