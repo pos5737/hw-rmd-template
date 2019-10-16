@@ -23,7 +23,35 @@ library(kableExtra)
 
 # Exercise 1.1
 
-For this exercise, I did... Notice how I can override the `fig.height` and the `fig.width` I set as the default in the initial code chunk above.
+For this exercise, I was careful to **style** my *text* so that it was easy to read.
+
+Where possible, I...
+
+1. answered with
+1. numbered lists.
+
+Where appropriate, I...
+
+- answered with
+- bulleted lists. 
+
+I formatted my `inline code` correctly and I used
+
+# Headers, 
+
+## Subheaders, and 
+
+### Subsubheaders 
+
+to organize my work.
+
+I even used LaTeX equations, like $y = mx + b$, where needed.
+
+I quoted authorities on the topic:
+
+> "Always scatterplot your data."  ---Carlisle Rainey
+
+**Most importantly**, I used R code chunks to include code, output, and figures in the document without copy-and-pasting.
 
 ```{r, fig.height=2.5, fig.width=4}
 parties <- read_rds("data/parties.rds")
@@ -32,7 +60,8 @@ ggplot(parties, aes(x = eneg, y = enep)) +
   geom_point()
 ```
 
-Here's a bit more discussion about Exercise 1.1.
+Notice how I overrode the `fig.height` and the `fig.width` I set as the default in the initial code chunk above. Here's a bit more discussion about Exercise 1.1. 
+
 
 ## Exercise 2.3
 
